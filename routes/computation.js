@@ -7,8 +7,8 @@ router.get('/',(req,res)=>{
     let data=req.query.x
     console.log(data)
     res.render('computation',{
-        r:`sqrt applied to ${randomNum} is ${Math.sqrt(randomNum)}`,
-        q:` sqrt applied to ${data} is ${Math.sqrt(data)}`
+        r:`Round applied to ${randomNum} is ${Math.round(randomNum)}`,
+        q:`Round applied to ${data} is ${Math.round(data)}`
     })
 })
 
